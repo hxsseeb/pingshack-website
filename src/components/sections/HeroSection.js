@@ -5,24 +5,25 @@ import { H1, MediumText } from "../styles/TextStyles"
 import { themes } from "../styles/ColorStyles"
 import PurchaseButton from "../buttons/PurchaseButton"
 
-function HeroSection() {
+export default function HeroSection() {
   return (
     <Wrapper>
       <ContentWrapper>
         <TextWrapper>
-          <Title>Amplifying profits</Title>
-          <Description>£19 per month / cancel anytime</Description>
-          <PurchaseButton 
-          title="Start learning"
-          subtitle="Some random text"
-          />
+          <Title>
+            Amplifying your <br></br> profits
+          </Title>
+          <Description>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque fringilla, sapien a consequat ornare, eros neque porta
+            tellus, in facilisis neque libero id metus.
+          </Description>
+          <PurchaseButton title="Purchase now" subtitle="£19 per month" />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
   )
 }
-
-export default HeroSection
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #4316db 0%, #9076e7 100%);

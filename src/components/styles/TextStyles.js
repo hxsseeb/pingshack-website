@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const H1 = styled.h1`
   font-weight: bold;
@@ -42,8 +42,7 @@ export const Caption = styled.p`
 export const Caption2 = styled.p`
   font-weight: 600;
   font-size: 15px;
-  line-height: 18px;
-  text-transform: uppercase;
+  line-height: 20px;
 `
 
 export const SmallText = styled.p`
