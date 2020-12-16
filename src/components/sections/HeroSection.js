@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { H1, MediumText } from "../styles/TextStyles"
+import { themes } from "../styles/ColorStyles"
+import PurchaseButton from "../buttons/PurchaseButton"
 
 function HeroSection() {
   return (
@@ -9,6 +12,10 @@ function HeroSection() {
         <TextWrapper>
           <Title>Amplifying profits</Title>
           <Description>£19 per month / cancel anytime</Description>
+          <PurchaseButton 
+          title="Start learning"
+          subtitle="Some random text"
+          />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
@@ -33,12 +40,7 @@ const TextWrapper = styled.div`
   gap: 30px;
 `
 
-const Title = styled.h1`
-  font-weight: bold;
-  font-size: 60px;
-  color: white;
+const Title = styled(H1)`
+  color: ${themes.dark.text1};
 `
-const Description = styled.p`
-  font-size: 17px;
-  line-height: 130%;
-`
+const Description = styled(MediumText)``
