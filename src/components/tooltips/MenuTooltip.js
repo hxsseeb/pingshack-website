@@ -3,11 +3,10 @@ import styled from "styled-components"
 import { tooltipData } from "../../data/menuData"
 import MenuButton from "../buttons/MenuButton"
 
-export default function MenuTooltip() {
-  const [isOpen, setIsOpen] = useState(false)
-
+export default function MenuTooltip(props) {
+  const { isOpen } = props
   return (
-    <Wrapper isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+    <Wrapper isOpen={isOpen}>
       {tooltipData.map((item, index) => (
         <MenuButton key={index} item={item} />
       ))}
@@ -25,8 +24,14 @@ const Wrapper = styled.div`
   backdrop-filter: blur(40px);
   border-radius: 20px;
   padding: 20px;
-  opacity: ${props => (props.isOpen ? 1 : 0.5)};
+  opacity: ${props => (props.isOpen ? 1 : 0)};
   z-index: 1;
   display: grid;
   grid-template-columns: 130px;
+  transition: 0.3s ease-in-out;
+  visibility: ${props => (props.isOpen ? "visible" : "hidden")};
+  transform: ${props =>
+    props.isOpen
+      ? "skewY(0deg) rotate(0deg) translateY(0px)"
+      : "skewY(-5deg) rotate(5deg) translateY(-30px)"};
 `
