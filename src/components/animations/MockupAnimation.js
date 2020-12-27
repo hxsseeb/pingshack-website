@@ -56,7 +56,7 @@ const Wrapper = styled.div`
     position: absolute;
     width: 183px;
     height: 120px;
-    right: 617px;
+    left: 0px;
     top: 0px;
 
     background: url("/images/animations/mockup1.svg"),
@@ -70,16 +70,15 @@ const Wrapper = styled.div`
     box-sizing: border-box;
     box-shadow: 0px 16.3881px 32.7761px rgba(99, 30, 187, 0.5);
     backdrop-filter: blur(21.8507px);
-    /* Note: backdrop-filter has minimal browser support */
 
-    border-radius: 16.3881px;
+    border-radius: 16px;
   }
 
   .mockup2 {
     position: absolute;
     width: 183px;
     height: 120px;
-    right: 403px;
+    left: 214px;
     top: 0px;
 
     background: url("/images/animations/mockup2.svg"),
@@ -102,7 +101,7 @@ const Wrapper = styled.div`
     position: absolute;
     width: 701px;
     height: 428px;
-    right: 62px;
+    left: 37px;
     top: 60px;
 
     background: url("/images/animations/mockup3.svg"), rgba(23, 12, 61, 0.5);
@@ -117,7 +116,7 @@ const Wrapper = styled.div`
     position: absolute;
     width: 399px;
     height: 274px;
-    right: 207px;
+    left: 194px;
     top: 262px;
 
     background: url("/images/animations/mockup4.svg"), rgba(39, 20, 62, 0.3);
@@ -133,7 +132,7 @@ const Wrapper = styled.div`
     position: absolute;
     width: 412px;
     height: 274px;
-    right: -228px;
+    left: 616px;
     top: 262px;
 
     background: url("/images/animations/mockup5.svg"), rgba(39, 20, 62, 0.2);
