@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     background: ${themes.light.backgroundColor};
 
     @media (prefers-color-scheme: dark) {
-	    background: ${themes.dark.backgroundColor};
+      background: ${themes.dark.backgroundColor};
     }
   }
 `

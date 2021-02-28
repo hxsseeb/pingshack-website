@@ -21,8 +21,8 @@ const MenuItem = styled.div`
   gap: ${props => (props.title ? "10px" : "0px")};
   align-items: center;
   padding: 10px;
-  border-radius: 10px;
   transition: 0.5s ease-out;
+  border-radius: 10px;
 
   :hover {
     background: rgba(255, 255, 255, 0.1);

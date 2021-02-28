@@ -42,7 +42,8 @@ export const Caption = styled.p`
 export const Caption2 = styled.p`
   font-weight: 600;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
 `
 
 export const SmallText = styled.p`

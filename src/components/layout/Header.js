@@ -1,6 +1,6 @@
+import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import { menuData } from "../../data/menuData"
 import MenuButton from "../buttons/MenuButton"
 import MenuTooltip from "../tooltips/MenuTooltip"
@@ -11,16 +11,17 @@ export default function Header() {
   function handleClick(event) {
     setIsOpen(!isOpen)
     event.preventDefault()
+    console.log(event)
   }
 
   return (
     <Wrapper>
       <Link to="/">
-        <img src="images/logos/logo.svg" alt="Logo" />
+        <img src="/images/logos/logo.svg" alt="Logo" />
       </Link>
       <MenuWrapper count={menuData.length}>
         {menuData.map((item, index) =>
-          item.link === "/dashboard" ? (
+          item.link === "/account" ? (
             <MenuButton
               item={item}
               key={index}

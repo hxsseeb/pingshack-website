@@ -13,8 +13,8 @@ export default function PurchaseButton(props) {
           <Ring src="/images/icons/icon-ring.svg" />
         </IconWrapper>
         <TextWrapper>
-          <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
+          <Title>{title || "Get Pro Access"}</Title>
+          <Subtitle>{subtitle || "$19 per month"}</Subtitle>
         </TextWrapper>
       </Wrapper>
     </Link>
@@ -22,8 +22,8 @@ export default function PurchaseButton(props) {
 }
 
 const Wrapper = styled.div`
-  max-width: 280px;
-  height: 70px;
+  width: 280px;
+  height: 77px;
   padding: 12px;
   background: linear-gradient(180deg, #ffffff 0%, #d9dfff 100%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   border-radius: 20px;
   display: grid;
   grid-template-columns: 53px auto;
-  align-content: center;
+  align-items: center;
   gap: 20px;
 
   *,
