@@ -13,17 +13,16 @@ function HeroSection() {
       <ContentWrapper>
         <TextWrapper>
           <Title>
-            Design
-            <br /> and code <span>React</span> apps
+            Amplify
+            <br /> profits <span>with</span> pingshack.
           </Title>
           <Description>
-            Don’t skip design. Learn design and code, by building real apps with
-            React and Swift. Complete courses about the best tools.
+            Join a reselling community with hundreds of members based across the
+            UK and Europe. Providing detailed release guides, lightning-fast
+            monitors, 1-to-1 support and in-house tools. Everything you need in
+            a single membership.
           </Description>
-          <PurchaseButton
-            title="Start learning"
-            subtitle="120+ hours of video"
-          />
+          <PurchaseButton title="Join today." subtitle="£20 per month" />
         </TextWrapper>
         <MockupAnimation />
       </ContentWrapper>

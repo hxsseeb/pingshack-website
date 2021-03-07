@@ -13,8 +13,8 @@ export default function PurchaseButton(props) {
           <Ring src="/images/icons/icon-ring.svg" />
         </IconWrapper>
         <TextWrapper>
-          <Title>{title || "Get Pro Access"}</Title>
-          <Subtitle>{subtitle || "$19 per month"}</Subtitle>
+          <Title>{title}</Title>
+          <Subtitle>{subtitle}</Subtitle>
         </TextWrapper>
       </Wrapper>
     </Link>
