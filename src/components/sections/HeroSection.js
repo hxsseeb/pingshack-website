@@ -17,10 +17,10 @@ function HeroSection() {
             <br /> profits with <span>pingshack</span>.
           </Title>
           <Description>
-            Join a reselling community with hundreds of members based across the
-            UK and Europe. Providing detailed release guides, lightning-fast
-            monitors, 1-to-1 support and in-house tools. Everything you need in
-            a single membership.
+            Join hundreds of members in a thriving reselling community based
+            across the UK and Europe. Providing detailed release guides,
+            lightning-fast monitors, 1-to-1 support and in-house tools.
+            Everything you need in a single membership.
           </Description>
           <PurchaseButton title="Join today." subtitle="£20 per month" />
         </TextWrapper>
