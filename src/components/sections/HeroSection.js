@@ -14,7 +14,7 @@ function HeroSection() {
         <TextWrapper>
           <Title>
             Amplify
-            <br /> profits <span>with</span> pingshack.
+            <br /> profits with <span>pingshack</span>.
           </Title>
           <Description>
             Join a reselling community with hundreds of members based across the
